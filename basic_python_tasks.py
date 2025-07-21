@@ -9,6 +9,8 @@ def test_greeting():
 
     assert output == "Hello, Anna! You're 25 years old."
 
+    print(output)
+
 
 def test_rectangle():
 
@@ -35,6 +37,8 @@ def test_circle():
     length = 2 * math.pi * r
 
     assert length == 144.51326206513048
+
+    print(f"length of circle - {round(length, 2)} and area - {round(area, 2)}")
 
 
 def test_random_list():
@@ -68,8 +72,6 @@ def test_dicts():
 
     first = ["a", "b", "c", "d", "e"]
     second = [1, 2, 3, 4, 5]
-
-    d = {}
 
     d = dict(zip(first, second))
 
